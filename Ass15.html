@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nan{
+            color: yellow;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            background-size: cover;
+            background-image: url("https://images.unsplash.com/photo-1545197680-433442d91dcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+        }
+        #India{
+            
+            
+            position: relative;
+            left: 25%;
+
+            background-size: 30%,20%;
+            background-image: url("data:image/png;base64,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");
+            height: 300px;
+            width: 50%;
+            border: 0px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#FF671F,#FF671F 33.3%,white 33.3%,white 66.6%,#046A38 66.6%);
+
+        
+
+
+        }
+        p{
+        
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(to right,#169B62,#169B62 33.3%,#FFFFFF 33.3%,#FFFFFF 66.6%,#FF883E 66.6%);
+
+        
+        }
+        h1{
+        
+        height: 300px;
+        width: 500px;
+        border: 1px groove rgb(85, 0, 255);
+        background-image: linear-gradient(#ffffff,#ffffff 33.3%,#0039a6 33.3%,#0039a6 66.6%,#d52b1e 66.6%);
+
+        }
+        h2{
+            height: 300px;
+        width: 500px;
+        border: 1px groove rgb(85, 0, 255);
+        background-image: linear-gradient(to right,#000000,#000000 33.3%,#FDDA24 33.3%,#FDDA24 66.6%,#EF3340 66.6%);
+
+
+        }
+        h3{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#CE1126,#CE1126 33.3%,#FFFFFF 33.3%,#FFFFFF 66.6%,#000000 66.6%);
+
+        
+
+        }
+        h4{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#0038B8,#0038B8 20%,#FFFFFF 20%,#FFFFFF 80%,#0038B8 80%);
+
+        
+        }
+        h5{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: repeating-linear-gradient(#002A8F 0%,#002A8F 20%,#FFFFFF 20%,#FFFFFF 40%);
+
+        
+        }
+        h6{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#ED2939, #ED2939 33.3%,#FFFFFF 33.3%,#FFFFFF 66.6%,#ED2939 66.6%);
+
+        
+        }
+        #two{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#EF3340,#EF3340 18%,#FFFFFF 18%,#FFFFFF 36%,#00205B 36%,#00205B 64%,#FFFFFF 64%,#FFFFFF 82%,#FF3340 82%);
+
+        
+        }
+        dd{
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: linear-gradient(#00732F,#00732F 33.3%,#FFFFFF 33.3%,#FFFFFF 66.6%,#000000 66.6%);
+
+        
+        }
+        article{
+            position: relative;
+            left: 41%;
+            height: 300px;
+            width: 500px;
+            border: 1px groove rgb(85, 0, 255);
+            background-image: repeating-linear-gradient(#B31942 0%,#B31942 7.5%,#FFFFFF 7.5%,#FFFFFF 15%);
+
+        
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 227px;
+            left: 47%;
+            z-index: 2;
+            
+
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #i{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size:100px;
+            position: relative;
+            top: 60px;
+            background-color: aliceblue;
+            width: 100%;
+        }
+        #a{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 100%;
+            left: 15%;
+        }
+        #b{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 30%;
+            left: 45%;
+        }
+        #c{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 60%;
+            left: 75%;
+        }
+        #d{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 100%;
+            left: 15%;
+        }
+        #e{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 30%;
+            left: 45%;
+        }
+        #f{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 60%;
+            left: 77%;
+        }
+        #g{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 100%;
+            left: 15%;
+        }
+        #h{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 30%;
+            left: 43%;
+        }
+        #l{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 60%;
+            left: 72%;
+        }
+        #m{
+            font-family: initial;
+            color:red;
+            font-weight: 200px;
+            font-size: xx-large;
+            position: relative;
+            top: 30px;
+            background-color: aliceblue;
+            width: 30%;
+            left: 46%;
+        }
+    
+
+        
+     
+        
+    </style>
+</head>
+<body>
+    <center><strong id="i">I Love My India</strong></center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/300px-Ashoka_Chakra.svg.png"height="50px" width="50px" alt="">
+    
+    <h1 id="India"></h1>
+    <br><br><br>
+    <div>
+    <p></p>
+    
+    <h1></h1>
+    <h2></h2>
+    </div>
+    <strong id="a">Ireland</strong>
+    <strong id="b">Russia</strong>
+    <strong id="c">Belgium</strong>
+    <br><br><br><hr><br><br>
+    <!-- belgium -->
+    <div>
+    <h3></h3>
+    
+    
+    
+    <!-- selrian -->
+    <h4></h4>
+    
+    <!-- isrel -->
+    <h5></h5>
+    <!-- cuba -->
+
+    </div>
+    <strong id="d">Selrian</strong>
+    <strong id="e">Isrel</strong>
+    <strong id="f">Cuba</strong>
+    <br><br><br><hr><br><br>
+    <div>
+    <h6></h6>
+    <!-- austria -->
+    <h1 id="two"></h1>
+    <!-- thailand -->
+    <dd></dd>
+    <!-- united arab emirates -->
+    </div>
+    <strong id="g">Austria</strong>
+    <strong id="h">Thailand</strong>
+    <strong id="l">United Arab Emirates</strong>
+    <br><br><br><hr><br><br>
+    <article></article>
+
+    <!-- united states -->
+    
+  
+    <strong id="m">United States</strong>
+    
+    <br><br><br><hr><br><br>
+    
+    
+    
+</body>
+</html>

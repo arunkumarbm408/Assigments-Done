@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+
+#sky{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url("../HTML/images/sky2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hel1{
+    height: 20vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: 10vw 10vh;
+    background-image: url("../HTML/images/helicaptor-removebg-preview.png");
+
+    animation-name: hel1;
+    animation-duration: 15s;
+    animation-timing-function:linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 20vh;
+
+}
+
+@keyframes hel1{
+    0%{
+        height: 20vh;
+        width: 20vw;
+        background-repeat: no-repeat;
+        background-size: 10vw 10vh;
+        background-image: url("../HTML/images/helicaptor-removebg-preview.png");
+        position: relative;
+        left: 0%;
+
+        
+    }
+    100%{
+
+        height: 20vh;
+        width: 20vw;
+        background-repeat: no-repeat;
+        background-size: 10vw 10vh;
+        background-image: url("../HTML/images/helicaptor-removebg-preview.png");
+        position: relative;
+        left: 80%;
+        
+    }
+}
+
+#hel2{
+    height: 20vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 10vw 10vh;
+    background-image: url("../HTML/images/helocaptor2-removebg-preview.png");
+    /* background-position:100% 10px; */
+    /* position: relative; */
+    /* left: 86vw; */
+    /* margin-right: 0; */
+    animation-name: hel2;
+    animation-duration: 15s;
+    animation-timing-function:linear ;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes   hel2  {
+    from{
+        position: relative;
+        top: 100px;
+        right: -1200px;
+
+    }
+    to{
+        position: relative;
+        top: 100px;
+        right: 800px;
+    }
+}
+
+/* @keyframes hel2{
+    from{
+        height: 20vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: 10vw 10vh;
+        background-image: url("../HTML/images/helocaptor2-removebg-preview.png");
+        position: relative;
+        right: 0%;
+        top: 10vh;
+        /* left: 86vw; */
+    /* }
+    to{
+        height: 20vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: 10vw 10vh;
+        background-image: url("../HTML/images/helocaptor2-removebg-preview.png");
+        position: relative;
+        left:0%;
+        top: 10vh; */
+        /* left: 0; */
+        
+    /* }
+} */ 
+
+#road{
+    height: 80vh;
+    width: 100%;
+    background-image: url("../HTML/images/road1.jpg.crdownload");
+    background-repeat: no-repeat;
+    background-size:100% 20vh;
+    position:absolute;
+     top: 80vh;
+    left: 0;
+    right: 0;
+    /* z-index: 1; */
+
+}
+
+#bike{
+    height: 80vh;
+    width: 100%;
+    background-image: url("../HTML/images/bike-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size:10vw 15vh;
+    position: relative;
+    z-index: 10;
+    animation-name: bikear;
+    animation-duration: 15s;
+    animation-timing-function:linear ;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bikear {
+    from{
+         left: 0;
+         position: relative;
+         z-index: 10;
+    }
+    to{
+        left: 50%;
+        position: relative;
+        z-index: 10;
+    }
+    
+}
+
+
+
+
+
+
+#hi{
+    height: 40vh;
+    width: 100%;
+    background-image: url("../HTML/images/bike1-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size:10vw 15vh;
+
+    
+    /* margin-left: 500px; */
+    /* position: relative;
+    right: 0%; */
+    /* left: 70vw; */
+    
+    
+    position: relative;
+    z-index: 1;
+    animation-name: bikearu;
+    animation-duration: 15s;
+    animation-timing-function:linear ;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bikearu {
+    from{
+        position: relative;
+        bottom: 40px;
+         right:-1200px;
+         z-index: 1;
+    }
+    to{
+        position: relative;
+        bottom: 40px;
+        right: 800px;
+        z-index: 1;
+    }
+    
+}
+
+
+
+
+
+
+#grass{
+    height: 20vh;width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../HTML/images/grss.avif");
+    background-size: 100% 15vh;
+    position: relative;
+    top: 50vh;
+  }

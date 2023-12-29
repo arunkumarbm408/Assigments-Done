@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+}
+
+#grid-container {
+    height: 200vh;
+    width: 100vw;
+    background-color:rgb(0, 200, 255);
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px 200px;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 50px;
+    justify-content: space-around;
+}
+.grid-items{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 140);
+    border: 5px double rgb(1, 1, 15);
+}
+
+#grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url("/HTML/images/html.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#grid-item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url("/HTML/images/html.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#grid-item3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url("/HTML/images/html.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#grid-item4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url("/HTML/images/html.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+#grid-item5{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("/HTML/images/css1-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+
+
+}
+
+
+#grid-item6{
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("/HTML/images/css1-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+
+    
+}
+
+
+#grid-item7{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("/HTML/images/css1-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+
+    
+}
+
+
+#grid-item8{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("/HTML/images/css1-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+
+#grid-item9{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("/HTML/images/js-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+    
+}
+
+#grid-item10{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("/HTML/images/js-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+#grid-item11{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("/HTML/images/js-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+#grid-item12{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("/HTML/images/js-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+#grid-item13{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-image: url("/HTML/images/botstrap-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+#grid-item14{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-image: url("/HTML/images/botstrap-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+
+#grid-item15{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-image: url("/HTML/images/botstrap-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
+
+
+#grid-item16{
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-image: url("/HTML/images/botstrap-removebg-preview.png");
+    background-repeat: repeat;
+    background-size:200px 200px;
+    background-color: white;
+    
+}
